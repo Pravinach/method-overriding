@@ -1,0 +1,32 @@
+package oops;
+
+class A{
+    int a;
+    public void meth1(){
+        System.out.println(" I am method of class A");
+    }
+}
+class B extends A{
+    @Override
+
+
+    public void meth1(){
+        System.out.println(" I am method of clas B");
+    }
+
+
+}
+
+
+
+public class methodoverride {
+    public static void main(String[] args) {
+
+        A sorry= new A();
+        sorry.meth1();
+       B hello= new B();
+       hello.meth1();
+
+    }
+}
+// method overriding occurs with the same method but within the two classes. 
