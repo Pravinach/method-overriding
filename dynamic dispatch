@@ -1,0 +1,40 @@
+
+class electronics{
+
+    public void details(){
+        System.out.println(" I am a method of 1");
+    }
+
+    public void print(){
+        System.out.println(" i am class of class 1");
+    }
+
+
+}
+class laptop extends electronics{
+    @Override
+    public void details(){
+        System.out.println(" I am method of class 2");
+    }
+public void print2(){
+    System.out.println(" i am an exception");
+}
+
+
+}
+
+
+public class dynamicdispatch {
+    public static void main(String[] args) {
+        electronics A = new laptop();
+        A.details();
+        A.print();
+//A.print2(); " This method is not alloweed"
+
+
+
+    }
+}
+// Dynamic dispatch can occur when two parent class and
+// subclass have created one object with a reference of
+// and an object of subclass
